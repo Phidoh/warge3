@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Calculator</title>
+<style>
+    .calcu {
+        margin-top: 50px;
+        margin-left: 100px;
+        background-color: lightgray;
+        width: 350px;
+        height: 400px;
+        font-size: 0px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px;
+        opacity: 0.7;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .A,
+    .B,
+    .C,
+    .D,
+    .E,
+    .F,
+    .G,
+    .H,
+    .I,
+    .J {
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        Font-size: 20px;
+        color: white;
+        background-color: black;
+    }
+    
+    .b,
+    .c,
+    .d,
+    .e {
+        height: 100px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    
+    .a,
+    .aa {
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    
+    .ans {
+        margin-top: 110px;
+        margin-left: 100px;
+        background-color: lightgray;
+        width: 350px;
+        height: 50px;
+        box-shadow: 0px 0px 10px 0px;
+        border-radius: 10px;
+        color: black;
+        display: grid;
+        grid-template-rows: 50px 50px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .as {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        font-size: 40px;
+        opacity: 1;
+    }
+    
+    .aa {
+        background-color: yellow;
+    }
+    
+    .a {
+        background-color: orange;
+    }
+    
+    .ok {
+        height: 50px;
+        width: 350px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        font-size: 40px;
+        opacity: 1;
+        margin-left: 0px;
+        background-color: lightgray;
+    }
+</style>
+
+<body style=background:url(./back.jpg) class="bodyy">
+    <div class="ans">
+        <div class="as" type="number"></div>
+        <div class="ok"></div>
+    </div>
+    <div class="calcu">
+        <button class="A" onclick="
+               document.querySelector('.as').innerHTML += '1';
+         ">1</button>
+        <button class="B" onclick="
+              document.querySelector('.as').innerHTML += '2';
+         ">2</button>
+        <button class="C" onclick="document.querySelector( '.as').innerHTML +='3' ; ">3</button>
+        <button class="b " onclick=" document.querySelector( '.as').innerHTML +='+' ; ">+</button>
+        <button class="D " onclick=" document.querySelector( '.as').innerHTML +='4' ; ">4</button>
+        <button class="E " onclick=" document.querySelector( '.as').innerHTML +='5' ; ">5</button>
+        <button class="F " onclick=" document.querySelector( '.as').innerHTML +='6' ; ">6</button>
+        <button class="c " onclick=" document.querySelector( '.as').innerHTML +='-' ; ">-</button>
+        <button class="G " onclick=" document.querySelector( '.as').innerHTML +='7' ; ">7</button>
+        <button class="H " onclick=" document.querySelector( '.as').innerHTML +='8' ; ">8</button>
+        <button class="I " onclick=" document.querySelector( '.as').innerHTML +='9' ; ">9</button>
+        <button class="d " onclick=" document.querySelector( '.as').innerHTML +='*' ; ">*</button>
+        <button class="J " onclick=" document.querySelector( '.as').innerHTML +='0' ; ">0</button>
+        <button class="a " onclick=" document.querySelector( '.ok').innerHTML=eval(document.querySelector( '.as').innerHTML); ">=</button>
+        <button class="aa " onclick=" document.querySelector( '.as').innerHTML='' ; document.querySelector( '.ok').innerHTML='' ; ">C</button>
+        <button class="e " onclick=" document.querySelector( '.as').innerHTML +='/' ; ">/</button>
+    </div>
+
+</body>
+
+</html>
